@@ -3,7 +3,7 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+default_alphabet = "air bat cap drum each faint gust harp ivy jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -177,6 +177,7 @@ symbol_key_words = {
     "paren": "(",
     "L paren": "(",
     "left paren": "(",
+    "are paren": ")",
     "R paren": ")",
     "right paren": ")",
     "brace": "{",
@@ -199,6 +200,7 @@ symbol_key_words = {
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
+    "semi": ";"
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -228,9 +230,12 @@ simple_keys = [
 alternate_keys = {
     "delete": "backspace",
     "forward delete": "delete",
-    #'junk': 'backspace',
+    'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
+    "push": "end",
+    "pull": "home",
+    "spunk": "delete",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
