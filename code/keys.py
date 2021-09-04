@@ -113,7 +113,7 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
+    "alter": "alt",  #'alter': 'alt',
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
@@ -180,10 +180,12 @@ symbol_key_words = {
     "are paren": ")",
     "R paren": ")",
     "right paren": ")",
-    "brace": "{",
-    "left brace": "{",
-    "R brace": "}",
-    "right brace": "}",
+    # "brace": "{",
+    # "left brace": "{",
+    "lack": "{",
+    # "R brace": "}",
+    # "right brace": "}",
+    "rack": "}",
     "angle": "<",
     "left angle": "<",
     "less than": "<",
