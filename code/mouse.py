@@ -387,3 +387,14 @@ if app.platform == "mac":
                 e.modify()
 
     tap.register(tap.MMOVE | tap.HOOK, on_move)
+
+
+def gaze_on_hiss(is_active):
+    if is_active:
+        Actions.mouse_gaze_scroll()
+    else:
+        #   stop_scroll()
+        pass
+
+
+noise.register('hiss', gaze_on_hiss)
