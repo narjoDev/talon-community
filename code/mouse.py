@@ -232,7 +232,8 @@ class Actions:
     def mouse_move_center_active_window():
         """move the mouse cursor to the center of the currently active window"""
         rect = ui.active_window().rect
-        ctrl.mouse_move(rect.left + (rect.width / 2), rect.top + (rect.height / 2))
+        ctrl.mouse_move(rect.left + (rect.width / 2),
+                        rect.top + (rect.height / 2))
 
 
 def show_cursor_helper(show):
@@ -389,12 +390,9 @@ if app.platform == "mac":
     tap.register(tap.MMOVE | tap.HOOK, on_move)
 
 
-def gaze_on_hiss(is_active):
-    if is_active:
+def on_hiss(is_active):
+    if is_active and actions.speech.enabled():
         Actions.mouse_gaze_scroll()
-    else:
-        #   stop_scroll()
-        pass
 
 
-noise.register('hiss', gaze_on_hiss)
+noise.register('hiss', on_hiss)
