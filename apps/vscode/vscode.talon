@@ -37,6 +37,21 @@ panel switch: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.action.terminal.focus")
 focus editor: user.vscode("workbench.action.focusActiveEditorGroup")
 
+# Groups
+groups join all: user.vscode("workbench.action.joinAllGroups")
+group focus up: user.vscode("workbench.action.focusAboveGroup")
+group focus right: user.vscode("workbench.action.focusRightGroup")
+group focus down: user.vscode("workbench.action.focusBelowGroup")
+group focus left: user.vscode("workbench.action.focusLeftGroup")
+group move up: user.vscode("workbench.action.moveEditorToAboveGroup")
+group move right: user.vscode("workbench.action.moveEditorToRightGroup")
+group move down: user.vscode("workbench.action.moveEditorToBelowGroup")
+group move left: user.vscode("workbench.action.moveEditorToLeftGroup")
+group clone up: user.vscode("workbench.action.duplicateActiveEditorGroupUp")
+group clone right: user.vscode("workbench.action.duplicateActiveEditorGroupRight")
+group clone down: user.vscode("workbench.action.duplicateActiveEditorGroupDown")
+group clone left: user.vscode("workbench.action.duplicateActiveEditorGroupLeft")
+
 # Settings
 show settings: user.vscode("workbench.action.openGlobalSettings")
 show shortcuts: user.vscode("workbench.action.openGlobalKeybindings")
