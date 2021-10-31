@@ -229,11 +229,23 @@ class Actions:
         position = ctrl.mouse_pos()
         clip.set_text((repr(position)))
 
+    def copy_mouse_position_relative_window():
+        """Copy the current mouse position coordinates relative to the currently active window"""
+        x, y = ctrl.mouse_pos()
+        rect = ui.active_window().rect
+        clip.set_text((x - rect.left, y - rect.top))
+
     def mouse_move_center_active_window():
         """move the mouse cursor to the center of the currently active window"""
         rect = ui.active_window().rect
         ctrl.mouse_move(rect.left + (rect.width / 2),
                         rect.top + (rect.height / 2))
+
+    def mouse_move_relative_window(x: int, y: int):
+        """Move the mouse cursor relative to the currently active window"""
+        rect = ui.active_window().rect
+        print(rect)
+        ctrl.mouse_move(rect.left + x, rect.top + y)
 
 
 def show_cursor_helper(show):
