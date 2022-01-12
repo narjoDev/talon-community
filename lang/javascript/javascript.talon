@@ -19,6 +19,16 @@ settings():
 (op | is) strict equal: " === "
 (op | is) strict not equal: " !== "
 
+arrow block:
+    " => {}"
+    key(left)
+    key(enter)
+
+empty arrow: 
+    "() => {}"
+    key(left)
+    key(enter)
+
 state const: "const "
 
 state let: "let "

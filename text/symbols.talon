@@ -11,8 +11,17 @@ triple quote: "'''"
 (dot dot | dotdot): ".."
 ellipses: "..."
 (comma and | spamma): ", "
+ramma:
+    key(right)
+    ", "
+rodda:
+    key(right)
+    "."
+race:
+    key(right)
+    " "
 plus: "+"
-arrow: "->"
+solo arrow: "->"
 dub arrow: "=>"
 new line: "\\n"
 carriage return: "\\r"
@@ -37,6 +46,8 @@ inside (angle | angles):
 (inside parens | args):
 	insert("()")
 	key(left)
+empty args:
+    insert("()")
 inside (squares | square brackets | list):
 	insert("[]")
 	key(left)

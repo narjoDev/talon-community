@@ -113,12 +113,12 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alter": "alt",  #'alter': 'alt',
-    "control": "ctrl",  #'troll':   'ctrl',
-    "shift": "shift",  #'sky':     'shift',
+    "alter": "alt",  # 'alter': 'alt',
+    "control": "ctrl",  # 'troll':   'ctrl',
+    "shift": "shift",  # 'sky':     'shift',
     "super": "super",
 }
-if app.platform  == "mac":
+if app.platform == "mac":
     modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
 ctx.lists["self.modifier_key"] = modifier_keys
@@ -202,6 +202,7 @@ symbol_key_words = {
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
+    "da boat": '"',
     "semi": ";",
 
     # Currencies
@@ -254,5 +255,3 @@ ctx.lists["self.special_key"] = special_keys
 ctx.lists["self.function_key"] = {
     f"F {default_f_digits[i]}": f"f{i + 1}" for i in range(12)
 }
-
-
