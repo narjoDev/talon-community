@@ -14,7 +14,7 @@ window close: user.vscode("workbench.action.closeWindow")
 please [<user.text>]:
     user.vscode("workbench.action.showCommands")
     insert(user.text or "")
-    
+
 # Sidebar
 bar explore: user.vscode("workbench.view.explorer")
 bar extensions: user.vscode("workbench.view.extensions")
@@ -22,13 +22,14 @@ bar outline: user.vscode("outline.focus")
 bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
+bar test: user.vscode("workbench.view.testing.focus")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
 
 symbol hunt [<user.text>]:
     user.vscode("workbench.action.gotoSymbol")
     sleep(50ms)
     insert(text or "")
-    
+
 # Panels
 panel control: user.vscode("workbench.panel.repl.view.focus")
 panel output: user.vscode("workbench.panel.output.focus")
@@ -54,6 +55,11 @@ group clone left: user.vscode("workbench.action.duplicateActiveEditorGroupLeft")
 
 # Settings
 show settings: user.vscode("workbench.action.openGlobalSettings")
+show settings json: user.vscode("workbench.action.openSettingsJson")
+show settings folder: user.vscode("workbench.action.openFolderSettings")
+show settings folder json: user.vscode("workbench.action.openFolderSettingsFile")
+show settings workspace: user.vscode("workbench.action.openWorkspaceSettings")
+show settings workspace json: user.vscode("workbench.action.openWorkspaceSettingsFile")
 show shortcuts: user.vscode("workbench.action.openGlobalKeybindings")
 show snippets: user.vscode("workbench.action.openSnippets")
 
@@ -116,7 +122,8 @@ go recent [<user.text>]:
     insert(text or "")
     sleep(250ms)
 open link: user.vscode("editor.action.openLink")
-    
+go edit: user.vscode("workbench.action.navigateToLastEditLocation")
+
 # Bookmarks. Requires Bookmarks plugin
 go marks: user.vscode("workbench.view.extension.bookmarks")
 toggle mark: user.vscode("bookmarks.toggle")
@@ -146,6 +153,8 @@ git commit [<user.text>]:
 git commit undo: user.vscode("git.undoCommit")
 git commit amend: user.vscode("git.commitStagedAmend")
 git diff: user.vscode("git.openChange")
+git fetch: user.vscode("git.fetch")
+git fetch all: user.vscode("git.fetchAll")
 git ignore: user.vscode("git.ignore")
 git merge: user.vscode("git.merge")
 git output: user.vscode("git.showOutput")
@@ -160,9 +169,12 @@ git stash pop: user.vscode("git.stashPop")
 git status: user.vscode("workbench.scm.focus")
 git stage: user.vscode("git.stage")
 git stage all: user.vscode("git.stageAll")
+git sync: user.vscode("git.sync")
 git unstage: user.vscode("git.unstage")
 git unstage all: user.vscode("git.unstageAll")
 pull request: user.vscode("pr.create")
+# Use keyboard shortcuts because VSCode relies on when clause contexts to choose the appropriate
+# action: https://code.visualstudio.com/api/references/when-clause-contexts
 change next: key(alt-f5)
 change last: key(shift-alt-f5)
 
@@ -206,7 +218,7 @@ restore: user.vscode("workbench.action.evenEditorWidths")
 replace here:
     user.replace("")
     key(cmd-alt-l)
-    
+
 hover show: user.vscode("editor.action.showHover")
 
 join lines: user.vscode("editor.action.joinLines")
