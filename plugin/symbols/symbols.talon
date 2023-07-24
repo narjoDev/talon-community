@@ -1,3 +1,4 @@
+new line: "\n"
 double dash: "--"
 # (bracket | brack | left bracket): "{"
 lack: "{"
