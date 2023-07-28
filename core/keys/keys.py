@@ -175,7 +175,7 @@ symbol_key_words = {
     "quote": "'",
     "question": "?",
     "apostrophe": "'",
-    "layer": "[",
+    "square": "[",
     "rare": "]",
     "slash": "/",
     "backslash": "\\",

@@ -5,6 +5,15 @@ triple quote: "'''"
 (dot dot | dotdot): ".."
 ellipses: "..."
 (comma and | spamma): ", "
+ramma:
+    key(right)
+    ", "
+rodda:
+    key(right)
+    "."
+race:
+    key(right)
+    " "
 arrow: "->"
 dub arrow: "=>"
 empty dub string: user.insert_between('"', '"')
