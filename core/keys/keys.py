@@ -123,9 +123,9 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
-    "control": "ctrl",  #'troll':   'ctrl',
-    "shift": "shift",  #'sky':     'shift',
+    "alt": "alt",  # 'alter': 'alt',
+    "control": "ctrl",  # 'troll':   'ctrl',
+    "shift": "shift",  # 'sky':     'shift',
     "super": "super",
 }
 if app.platform == "mac":
@@ -172,7 +172,7 @@ punctuation_words = {
 symbol_key_words = {
     "dot": ".",
     "point": ".",
-    "quote": "'",
+    "coat": "'",
     "question": "?",
     "apostrophe": "'",
     "square": "[",
@@ -240,7 +240,7 @@ alternate_keys = {
     "page up": "pageup",
     "page down": "pagedown",
     "push": "end",
-    "pull": "home"
+    "pull": "home",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
