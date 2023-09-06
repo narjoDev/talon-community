@@ -5,6 +5,7 @@ triple quote: "'''"
 (dot dot | dotdot): ".."
 ellipses: "..."
 spam: ", "
+coal gap: ": "
 ramma:
     key(right)
     ", "

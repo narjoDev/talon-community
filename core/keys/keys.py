@@ -187,8 +187,9 @@ symbol_key_words = {
     "tilde": "~",
     "bang": "!",
     "down score": "_",
-    "underscore": "_",
+    "under": "_",
     "paren": "(",
+    "ripper": ")",
     "lack": "{",
     "rack": "}",
     "angle": "<",
@@ -203,6 +204,7 @@ symbol_key_words = {
     "pipe": "|",
     "dub quote": '"',
     "double quote": '"',
+    "da boat": '"',
     # Currencies
     "dollar": "$",
     "pound": "£",
