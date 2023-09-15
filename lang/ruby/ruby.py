@@ -177,4 +177,7 @@ class UserActions:
                 text, settings.get("user.code_public_function_formatter")
             )
         )
-        actions.user.paste(result)
+        actions.user.paste(result + "\nend")
+        # actions.user.paste("\nend")
+        actions.key("up")
+        actions.edit.line_end()
