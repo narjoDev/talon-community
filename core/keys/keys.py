@@ -243,6 +243,7 @@ alternate_keys = {
     "page down": "pagedown",
     "push": "end",
     "pull": "home",
+    "scrape": "escape",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
@@ -253,7 +254,7 @@ special_keys = {k: k for k in simple_keys}
 special_keys.update(alternate_keys)
 ctx.lists["self.special_key"] = special_keys
 ctx.lists["self.function_key"] = {
-    f"F {name}": f"f{i}" for i, name in enumerate(f_digits, start=1)
+    f"Flight {name}": f"f{i}" for i, name in enumerate(f_digits, start=1)
 }
 
 
