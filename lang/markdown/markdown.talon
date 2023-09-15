@@ -39,9 +39,9 @@ list six:
     "                    - "
 
 {user.markdown_code_block_language} block:
-    "```{markdown_code_block_language}"
-    key(enter:2)
-    "```"
+    # Typing each ` is finicky with auto-closing.
+    # Paste seems to work.
+    user.paste("```{markdown_code_block_language}\n\n```")
     key(up)
 
 link:
