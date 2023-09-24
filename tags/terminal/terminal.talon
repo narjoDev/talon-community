@@ -19,3 +19,5 @@ copy paste:
     edit.copy()
     sleep(50ms)
     edit.paste()
+
+code here: insert('code .\n')
