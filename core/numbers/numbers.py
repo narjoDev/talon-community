@@ -220,3 +220,10 @@ def number_signed_small(m) -> int:
     """Parses an integer between -99 and 99."""
     number = m[-1]
     return -number if (m[0] in ["negative", "minus"]) else number
+
+
+@mod.action_class
+class Actions:
+    def string_number_to_digits(s: str) -> str:
+        """Converts a spelled out number to digits"""
+        return parse_number(s.split())
