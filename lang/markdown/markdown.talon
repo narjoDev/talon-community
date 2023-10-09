@@ -38,6 +38,14 @@ list six:
     edit.line_start()
     "                    - "
 
+list ord:
+    edit.line_start()
+    "1. "
+
+to do:
+    edit.line_start()
+    "- [ ] "
+
 {user.markdown_code_block_language} block:
     # Typing each ` is finicky with auto-closing.
     # Paste seems to work.
