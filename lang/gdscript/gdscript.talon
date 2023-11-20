@@ -25,3 +25,22 @@ settings():
     user.code_private_variable_formatter = "SNAKE_CASE"
     user.code_protected_variable_formatter = "SNAKE_CASE"
     user.code_public_variable_formatter = "SNAKE_CASE"
+
+^virtue funky <user.text>$:
+    user.code_private_function(text)
+
+state var [<user.text>]:
+    insert("var ")
+    user.code_public_variable_formatter(text)
+state const [<user.text>]:
+    insert("const ")
+    user.code_public_variable_formatter(text)
+
+sign var [<user.text>]:
+    insert("var ")
+    user.code_public_variable_formatter(text)
+    user.code_operator_assignment()
+sign const [<user.text>]:
+    insert("const ")
+    user.code_public_variable_formatter(text)
+    user.code_operator_assignment()

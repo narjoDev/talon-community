@@ -181,17 +181,16 @@ class UserActions:
     def code_default_function(text: str):
         actions.user.code_public_function(text)
 
-    # def code_private_function(text: str):
-    #     """Inserts private function declaration"""
-    #     result = "def _{}():".format(
-    #         actions.user.formatted_text(
-    #             text, settings.get("user.code_private_function_formatter")
-    #         )
-    #     )
-
-    # actions.user.paste(result)
-    # actions.edit.left()
-    # actions.edit.left()
+    def code_private_function(text: str):
+        """Inserts private function declaration"""
+        result = "func _{}():".format(
+            actions.user.formatted_text(
+                text, settings.get("user.code_private_function_formatter")
+            )
+        )
+        actions.user.paste(result)
+        actions.edit.left()
+        actions.edit.left()
 
     def code_public_function(text: str):
         result = "func {}():".format(
