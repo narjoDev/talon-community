@@ -3,7 +3,7 @@ double dash: "--"
 triple quote: "'''"
 (triple grave | triple back tick | gravy): insert("```")
 (dot dot | dotdot): ".."
-ellipses: "..."
+ellipsis: "..."
 spam: ", "
 coal gap: ": "
 ramma:
