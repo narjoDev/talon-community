@@ -4,6 +4,11 @@ ctx = Context()
 ctx.matches = r"""
 code.language: ruby
 """
+ctx.lists["user.code_common_function"] = {
+    "print": "print",
+    "puts": "puts",
+    "pea": "p",
+}
 
 
 @ctx.action_class("user")
@@ -168,6 +173,11 @@ class UserActions:
         actions.key("enter")
         actions.key("space")
         ### Extra non-standard things
+
+    def code_insert_function(text: str, selection: str):
+        text += f"({selection or ''})"
+        actions.user.paste(text)
+        actions.edit.left()
 
     def code_default_function(text: str):
         """Inserts function definition"""
