@@ -150,7 +150,9 @@ class UserActions:
         actions.key("left")
 
     def code_define_class():
-        actions.auto_insert("class ")
+        actions.user.paste("class \nend")
+        actions.key("up")
+        actions.edit.line_end()
 
     def code_import():
         actions.auto_insert('require ""')
@@ -176,8 +178,9 @@ class UserActions:
 
     def code_insert_function(text: str, selection: str):
         text += f"({selection or ''})"
+        # text += f" {selection or ''}"
         actions.user.paste(text)
-        actions.edit.left()
+        # actions.edit.left()
 
     def code_default_function(text: str):
         """Inserts function definition"""
@@ -188,6 +191,5 @@ class UserActions:
             )
         )
         actions.user.paste(result + "\nend")
-        # actions.user.paste("\nend")
         actions.key("up")
         actions.edit.line_end()
