@@ -8,6 +8,7 @@ from talon import Context, Module, actions, app, ui
 from talon.debug import log_exception
 
 mod = Module()
+mod.tag("wsl", desc="tag for enabling wsl functions in windows terminal")
 
 ctx = Context()
 
