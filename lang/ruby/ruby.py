@@ -177,10 +177,11 @@ class UserActions:
         ### Extra non-standard things
 
     def code_insert_function(text: str, selection: str):
-        text += f"({selection or ''})"
-        # text += f" {selection or ''}"
+        parens = False
+        text += f"({selection or ''})" if parens else f" {selection or ''}"
         actions.user.paste(text)
-        # actions.edit.left()
+        if parens:
+            actions.edit.left()
 
     def code_default_function(text: str):
         """Inserts function definition"""
