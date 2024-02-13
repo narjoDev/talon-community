@@ -47,10 +47,7 @@ to do:
     "- [ ] "
 
 {user.markdown_code_block_language} block:
-    # Typing each ` is finicky with auto-closing.
-    # Paste seems to work.
-    user.paste("```{markdown_code_block_language}\n\n```")
-    key(up)
+    user.insert_snippet("```{markdown_code_block_language}\n$0\n```")
 
 link:
     "[]()"
