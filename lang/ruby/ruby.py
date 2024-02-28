@@ -8,6 +8,9 @@ ctx.lists["user.code_common_function"] = {
     "print": "print",
     "puts": "puts",
     "pea": "p",
+    "access": "attr_accessor",
+    "getter": "attr_reader",
+    "setter": "attr_writer",
 }
 
 
