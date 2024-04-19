@@ -1,4 +1,7 @@
-from talon import Context, actions, settings
+from talon import Context, actions, settings, Module
+
+mod = Module()
+mod.tag("code_ruby", desc="tag for enabling ruby functions")
 
 ctx = Context()
 ctx.matches = r"""
@@ -135,6 +138,10 @@ class UserActions:
     def code_state_do():
         actions.insert("do ")
 
+    def code_block():
+        actions.insert("do ")
+        actions.user.ruby_hang_end()
+
     def code_state_if():
         actions.insert("if ")
 
@@ -144,6 +151,13 @@ class UserActions:
     def code_state_else():
         actions.insert("else")
         actions.key("enter")
+
+    def code_state_while():
+        actions.insert("while ")
+
+    def code_state_infinite_loop():
+        actions.insert("loop ")
+        actions.user.ruby_hang_end()
 
     def code_state_switch():
         actions.insert("case ")
@@ -156,9 +170,8 @@ class UserActions:
         actions.key("left")
 
     def code_define_class():
-        actions.user.paste("class \nend")
-        actions.key("up")
-        actions.edit.line_end()
+        actions.insert("class ")
+        actions.user.ruby_hang_end()
 
     def code_import():
         actions.auto_insert('require ""')
@@ -169,6 +182,12 @@ class UserActions:
 
     def code_state_return():
         actions.insert("return ")
+
+    def code_break():
+        actions.insert("break ")
+
+    def code_next():
+        actions.insert("next ")
 
     def code_insert_true():
         actions.auto_insert("true")
@@ -197,6 +216,14 @@ class UserActions:
                 text, settings.get("user.code_public_function_formatter")
             )
         )
-        actions.user.paste(result + "\nend")
+        actions.insert(result)
+        actions.user.ruby_hang_end()
+
+
+@mod.action_class
+class Actions:
+    def ruby_hang_end():
+        """dangle closing end"""
+        actions.user.paste("\nend")
         actions.key("up")
         actions.edit.line_end()

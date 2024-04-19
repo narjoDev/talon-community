@@ -1,5 +1,7 @@
 code.language: ruby
 -
+tag(): user.code_ruby
+
 tag(): user.code_imperative
 tag(): user.code_object_oriented
 
@@ -34,7 +36,12 @@ state end: "end"
 state begin: "begin"
 state rescue: "rescue "
 state module: "module "
-state include: "include "
+state include: user.insert_between("include '", "'")
+state until: "until "
+state unless: "unless "
+
+hang end:
+    user.ruby_hang_end()
 
 ^instance <user.text>$:
     insert("@")
