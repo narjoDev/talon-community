@@ -224,6 +224,8 @@ class UserActions:
 class Actions:
     def ruby_hang_end():
         """dangle closing end"""
-        actions.user.paste("\nend")
+        actions.edit.line_end()
+        actions.user.insert_between("", "end")
+        actions.key("enter")
         actions.key("up")
         actions.edit.line_end()
