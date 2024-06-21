@@ -9,10 +9,6 @@ ctx.matches = r"""
 mode: user.game
 """
 
-ctx.settings = {
-    "speech.timeout": 0.05,
-}
-
 
 @mod.action_class
 class Actions:

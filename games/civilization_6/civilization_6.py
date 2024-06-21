@@ -2,17 +2,13 @@ from talon import Module, Context, actions
 
 mod = Module()
 
-mod.apps.pathofexile = """
+mod.apps.civilization_6 = """
 os: windows
-and app.exe: PathOfExile.exe
+and app.name: Sid Meier's Civilization VI (DX12)
 """
 
 ctx = Context()
 ctx.matches = """
 mode: user.game
-app: pathofexile
+app: civilization_6
 """
-
-ctx.settings = {
-    "speech.timeout": 0.05,
-}
