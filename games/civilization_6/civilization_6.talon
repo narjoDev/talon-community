@@ -84,4 +84,20 @@ do range: 'r'
 do skip: key(space)
 do sleep: 'z'
 
-# TODO: other hotkeys
+# User Interface
+
+#civil history back
+#civil history forward
+map search: key(ctrl-f)
+see book: key(f9)
+see states: key(f2)
+tree civics: 'c'
+see spy: key(f3)
+full screen: key(end)
+see gove: key(f7)
+see people: 'o'
+see works: 'w'
+see ranking: key(f1)
+see god: 'l'
+tree tech: 't'
+see trade: key(f4)
