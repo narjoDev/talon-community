@@ -1,0 +1,1 @@
+^rescue mouse$: user.game_mode_rescue_mouse()
