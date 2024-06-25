@@ -9,30 +9,47 @@ overlay: key(shift-tab)
 word <user.word>: insert(word)
 clear all: user.delete_all()
 
+# Custom Clicks
+copy mouse position: user.copy_mouse_position()
+stay:                user.civilization_vi_mouse_movement_toggle()
+
 # Mouse
 
 control mouse: tracking.control_toggle()
 touch:
+  user.civilization_vi_mouse_movement_toggle()
   mouse_click(0)
   user.mouse_drag_end()
+  user.civilization_vi_mouse_movement_toggle()
 righty:
+  user.civilization_vi_mouse_movement_toggle()
   mouse_click(1)
+  user.civilization_vi_mouse_movement_toggle()
 mid click:
+  user.civilization_vi_mouse_movement_toggle()
   mouse_click(2)
+  user.civilization_vi_mouse_movement_toggle()
 <user.modifiers> touch:
+  user.civilization_vi_mouse_movement_toggle()
   key("{modifiers}:down")
   mouse_click(0)
   key("{modifiers}:up")
+  user.civilization_vi_mouse_movement_toggle()
 <user.modifiers> righty:
+  user.civilization_vi_mouse_movement_toggle()
   key("{modifiers}:down")
   mouse_click(1)
   key("{modifiers}:up")
+  user.civilization_vi_mouse_movement_toggle()
 drag:
+  user.civilization_vi_mouse_movement_toggle()
   user.mouse_drag(0)
+  user.civilization_vi_mouse_movement_toggle()
 riddle:
+  user.civilization_vi_mouse_movement_toggle()
   user.mouse_drag(1)
+  user.civilization_vi_mouse_movement_toggle()
 release: user.mouse_drag_end()
-copy mouse position: user.copy_mouse_position()
 
 # Generic Keys
 
@@ -77,7 +94,7 @@ do attack: 'a'
 do explore: 'e'
 do delete: key(delete)
 do heal: 'h'
-do fortify: 'f'
+do (fortify | fort): 'f'
 do (found | build): 'b'
 do move: 'm'
 do range: 'r'
