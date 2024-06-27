@@ -17,7 +17,7 @@ language_extensions = {
     "gdb": "gdb",
     "gdscript": "gd",
     "go": "go",
-    "html": "html",
+    "html": "html erb",
     "java": "java",
     "javascript": "js",
     "javascriptreact": "jsx",

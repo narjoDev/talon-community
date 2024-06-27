@@ -40,6 +40,8 @@ tag_names_list = {
     "label",
     "Link",
     "hr",
+    "em",
+    "strong",
 }
 
 # fmt: off
@@ -63,7 +65,8 @@ tag_names = {
     "harp six":         "h6",
     "break":            "br",
     "graph":            "p",
-    "pea":            "p"
+    "pea":              "p",
+    "lick":             "em"
 }
 # fmt: on
 
