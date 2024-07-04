@@ -21,7 +21,7 @@ touch:
   mouse_click(0)
   user.mouse_drag_end()
   user.civilization_vi_mouse_movement_toggle()
-righty:
+righty | march:
   user.civilization_vi_mouse_movement_toggle()
   mouse_click(1)
   user.civilization_vi_mouse_movement_toggle()
@@ -118,3 +118,7 @@ see ranking: key(f1)
 see god: 'l'
 tree tech: 't'
 see trade: key(f4)
+
+# Mod Dependent
+
+click tack: key(shift-a)
