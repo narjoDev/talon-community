@@ -276,6 +276,10 @@ _snap_positions = {
     "center bigger": RelativeScreenPos(1 / 8, 1 / 16, 7 / 8, 15 / 16),
     "left quarter": RelativeScreenPos(0, 0, 1 / 4, 1),
     "right quarter": RelativeScreenPos(3 / 4, 0, 1, 1),
+    "left tooth": RelativeScreenPos(0, 0, 2 / 5, 1),  # 'two fifths' => 'tooth'
+    "right tooth": RelativeScreenPos(3 / 5, 0, 1, 1),
+    "left thief": RelativeScreenPos(0, 0, 3 / 5, 1),  # 'three fifths' => 'thief'
+    "right thief": RelativeScreenPos(2 / 5, 0, 1, 1),
 }
 
 
