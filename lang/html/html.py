@@ -42,6 +42,8 @@ tag_names_list = {
     "hr",
     "em",
     "strong",
+    "section",
+    "iframe",
 }
 
 # fmt: off
@@ -66,7 +68,8 @@ tag_names = {
     "break":            "br",
     "graph":            "p",
     "pea":              "p",
-    "lick":             "em"
+    "lick":             "em",
+    "field set":        "fieldset",
 }
 # fmt: on
 
