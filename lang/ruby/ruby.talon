@@ -36,7 +36,7 @@ state end: "end"
 state begin: "begin"
 state rescue: "rescue "
 state module: "module "
-state include: user.insert_between("include '", "'")
+state include: "include "
 state until: "until "
 state unless: "unless "
 

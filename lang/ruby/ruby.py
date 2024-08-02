@@ -170,8 +170,12 @@ class UserActions:
         actions.key("left")
 
     def code_define_class():
-        actions.insert("class ")
-        actions.user.ruby_hang_end()
+        actions.insert("class \n")
+        # actions.insert("class ")
+        # actions.user.ruby_hang_end()
+        # actions.key("enter")
+        # actions.key("up")
+        # actions.edit.line_end()
 
     def code_import():
         actions.auto_insert('require ""')
