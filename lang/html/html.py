@@ -70,6 +70,10 @@ tag_names = {
     "pea":              "p",
     "lick":             "em",
     "field set":        "fieldset",
+    "be":               "b",
+    "bat":              "b",
+    "i":                "i",
+    "sit":              "i",
 }
 # fmt: on
 
