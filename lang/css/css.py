@@ -143,3 +143,7 @@ class UserActions:
     def code_insert_function(text: str, selection: str):
         actions.user.paste(f"{text}({selection})")
         actions.edit.left()
+
+    def code_block():
+        actions.user.insert_between("{", "}")
+        actions.key("enter")
