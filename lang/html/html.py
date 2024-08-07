@@ -44,6 +44,7 @@ tag_names_list = {
     "strong",
     "section",
     "iframe",
+    "article",
 }
 
 # fmt: off
@@ -58,6 +59,9 @@ tag_names = {
     "olist":            "ol",
     "unlist":           "ul",
     "list item":        "li",
+    "desk list":        "dl",
+    "desk term":        "dt",
+    "desk deets":       "dd",
     "image":            "img",
     "harp one":         "h1",
     "harp two":         "h2",
