@@ -45,6 +45,8 @@ tag_names_list = {
     "section",
     "iframe",
     "article",
+    "code",
+    "pre",
 }
 
 # fmt: off
@@ -76,7 +78,7 @@ tag_names = {
     "field set":        "fieldset",
     "be":               "b",
     "bat":              "b",
-    "i":                "i",
+    # "i":                "i",
     "sit":              "i",
 }
 # fmt: on
