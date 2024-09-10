@@ -47,6 +47,7 @@ tag_names_list = {
     "article",
     "code",
     "pre",
+    "figure",
 }
 
 # fmt: off
@@ -76,10 +77,11 @@ tag_names = {
     "pea":              "p",
     "lick":             "em",
     "field set":        "fieldset",
-    "be":               "b",
+    # "be":               "b",
     "bat":              "b",
     # "i":                "i",
     "sit":              "i",
+    "fig caption":      "figcaption",
 }
 # fmt: on
 
