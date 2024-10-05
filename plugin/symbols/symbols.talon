@@ -12,6 +12,9 @@ ramma:
 rodda:
     key(right)
     "."
+rami:
+    key(right)
+    ";"
 race:
     key(right)
     " "
