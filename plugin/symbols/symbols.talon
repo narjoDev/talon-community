@@ -12,7 +12,7 @@ ramma:
 rodda:
     key(right)
     "."
-rami:
+remy:
     key(right)
     ";"
 race:
