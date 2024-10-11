@@ -40,3 +40,9 @@ column:
 count: user.code_insert_function("Count", "")
 
 date: user.insert_between("DATE '", "'")
+
+#added
+alter: "ALTER "
+update: "UPDATE "
+insert into: "INSERT INTO "
+table: "TABLE "
