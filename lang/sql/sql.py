@@ -6,7 +6,12 @@ code.language: sql
 """
 
 # these vary by dialect
-ctx.lists["user.code_common_function"] = {"count": "Count", "min": "Min", "max": "Max"}
+ctx.lists["user.code_common_function"] = {
+    "count": "Count",
+    "min": "Min",
+    "max": "Max",
+    "check": "CHECK",
+}
 
 
 @ctx.action_class("user")

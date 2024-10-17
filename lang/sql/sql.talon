@@ -42,9 +42,18 @@ count: user.code_insert_function("Count", "")
 date: user.insert_between("DATE '", "'")
 
 #added
+# TODO: refactor this to a list in the python file
 create: "CREATE "
 alter: "ALTER "
 update: "UPDATE "
 insert into: "INSERT INTO "
 table: "TABLE "
 as: "AS "
+set: "SET "
+default: "DEFAULT "
+unique: "UNIQUE "
+not null: "NOT NULL"
+values: "VALUES "
+add column: "ADD COLUMN "
+add constraint: "ADD CONSTRAINT "
+alter column: "ALTER COLUMN "
