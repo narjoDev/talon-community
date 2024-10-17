@@ -7,10 +7,13 @@ code.language: sql
 
 # these vary by dialect
 ctx.lists["user.code_common_function"] = {
-    "count": "Count",
-    "min": "Min",
-    "max": "Max",
+    "average": "AVG",
     "check": "CHECK",
+    "count": "COUNT",
+    "max": "MAX",
+    "min": "MIN",
+    "round": "ROUND",
+    "sum": "SUM",
 }
 
 
