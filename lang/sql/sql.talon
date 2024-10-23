@@ -19,8 +19,10 @@ ascending: " ASC"
 dot i d: ".id"
 inner join: user.insert_between("INNER JOIN ", " ON ")
 inner join using: user.insert_between("INNER JOIN ", " USING ")
-left outer join: user.insert_between("LEFT OUTER JOIN ", " ON ")
-right outer join: user.insert_between("RIGHT OUTER JOIN ", " ON ")
+left [outer] join: user.insert_between("LEFT OUTER JOIN ", " ON ")
+right [outer] join: user.insert_between("RIGHT OUTER JOIN ", " ON ")
+full [outer] join: user.insert_between("FULL OUTER JOIN ", " ON ")
+cross join: "CROSS JOIN "
 
 with:
     key(enter up)
@@ -48,6 +50,15 @@ count: user.code_insert_function("Count", "")
 
 date: user.insert_between("DATE '", "'")
 
+state switch:
+    "CASE "
+    key(return)
+    "END"
+    key(up)
+    edit.line_end()
+
+state case: user.insert_between("WHEN ", " THEN ")
+
 #added
 # TODO: refactor this to a list in the python file
 create: "CREATE "
@@ -55,7 +66,7 @@ alter: "ALTER "
 update: "UPDATE "
 insert into: "INSERT INTO "
 table: "TABLE "
-as: "AS "
+as: " AS "
 set: "SET "
 default: "DEFAULT "
 unique: "UNIQUE "
