@@ -13,6 +13,7 @@ ctx.lists["user.code_common_function"] = {
     "max": "MAX",
     "min": "MIN",
     "round": "ROUND",
+    "string egg": "string_agg",
     "sum": "SUM",
 }
 

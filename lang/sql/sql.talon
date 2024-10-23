@@ -33,9 +33,16 @@ with:
     ") "
     key(delete up:2 right:3)
 
-column:
+column: "COLUMN "
+# column:
+#     key(return)
+#     ", "
+
+# should this be in a more general file?
+clint:
+    edit.line_end()
+    ","
     key(return)
-    ", "
 
 count: user.code_insert_function("Count", "")
 
@@ -52,8 +59,7 @@ as: "AS "
 set: "SET "
 default: "DEFAULT "
 unique: "UNIQUE "
-not null: "NOT NULL"
+not null: "NOT NULL "
 values: "VALUES "
-add column: "ADD COLUMN "
-add constraint: "ADD CONSTRAINT "
-alter column: "ALTER COLUMN "
+add: "ADD "
+constraint: "CONSTRAINT "
