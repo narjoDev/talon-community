@@ -65,6 +65,7 @@ update: "UPDATE "
 insert into: "INSERT INTO "
 explain: "EXPLAIN "
 explain analyze: "EXPLAIN ANALYZE "
+database: "DATABASE "
 table: "TABLE "
 constraint: "CONSTRAINT "
 sequence: "SEQUENCE "
@@ -77,9 +78,14 @@ not null: "NOT NULL "
 on delete cascade: "ON DELETE CASCADE "
 primary key: "PRIMARY KEY "
 foreign key: "FOREIGN KEY "
+references: "REFERENCES "
 values: "VALUES "
 add: "ADD "
-on: " ON "
+on: "ON "
+between: "BETWEEN "
+exists: user.insert_between("EXISTS (", ")")
+any: user.insert_between("ANY (", ")")
+all: user.insert_between("ALL (", ")")
 
 #dangerous
 sudo drop: "DROP "
