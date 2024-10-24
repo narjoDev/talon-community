@@ -59,18 +59,28 @@ state switch:
 
 state case: user.insert_between("WHEN ", " THEN ")
 
-#added
-# TODO: refactor this to a list in the python file
 create: "CREATE "
 alter: "ALTER "
 update: "UPDATE "
 insert into: "INSERT INTO "
+explain: "EXPLAIN "
+explain analyze: "EXPLAIN ANALYZE "
 table: "TABLE "
+constraint: "CONSTRAINT "
+sequence: "SEQUENCE "
+index: "INDEX "
 as: " AS "
 set: "SET "
 default: "DEFAULT "
 unique: "UNIQUE "
 not null: "NOT NULL "
+on delete cascade: "ON DELETE CASCADE "
+primary key: "PRIMARY KEY "
+foreign key: "FOREIGN KEY "
 values: "VALUES "
 add: "ADD "
-constraint: "CONSTRAINT "
+on: " ON "
+
+#dangerous
+sudo drop: "DROP "
+sudo delete: "DELETE "
