@@ -45,12 +45,6 @@ column: "COLUMN "
 #     key(return)
 #     ", "
 
-# should this be in a more general file?
-clint:
-    edit.line_end()
-    ","
-    key(return)
-
 count: user.code_insert_function("COUNT", "")
 
 date: user.insert_between("DATE '", "'")

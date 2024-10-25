@@ -18,6 +18,10 @@ remy:
 race:
     key(right)
     " "
+clint:
+    edit.line_end()
+    ","
+    key(return)
 arrow: "->"
 (dub arrow | rocket): "=>"
 empty dub string: user.insert_between('"', '"')
