@@ -9,6 +9,11 @@ tag(): user.code_functions_common
 select: "SELECT "
 distinct: "DISTINCT "
 from: "FROM "
+from <user.prose>$:
+    "FROM {user.formatted_text(prose, 'SNAKE_CASE')}"
+from <user.prose> over:
+    "FROM {user.formatted_text(prose, 'SNAKE_CASE')}"
+select star: "SELECT * "
 select star from: "SELECT *\nFROM "
 where: "WHERE "
 order by: "ORDER BY "
@@ -46,7 +51,7 @@ clint:
     ","
     key(return)
 
-count: user.code_insert_function("Count", "")
+count: user.code_insert_function("COUNT", "")
 
 date: user.insert_between("DATE '", "'")
 
