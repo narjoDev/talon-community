@@ -6,22 +6,41 @@ tag(): user.code_comment_block_c_like
 tag(): user.code_data_null
 tag(): user.code_functions_common
 
+# Data Manipulation/Retrieval
+
+sudo delete: "DELETE "
+insert into: "INSERT INTO "
+update: "UPDATE "
 select: "SELECT "
+
 distinct: "DISTINCT "
+
+select star: "SELECT * "
+
 from: "FROM "
 from <user.prose>$:
     "FROM {user.formatted_text(prose, 'SNAKE_CASE')}"
 from <user.prose> over:
     "FROM {user.formatted_text(prose, 'SNAKE_CASE')}"
-select star: "SELECT * "
-select star from: "SELECT *\nFROM "
+
 where: "WHERE "
 order by: "ORDER BY "
 group by: "GROUP BY "
 having: "HAVING "
 descending: " DESC"
 ascending: " ASC"
-dot i d: ".id"
+
+as: " AS "
+values: "VALUES "
+# do I need ON?
+on: "ON "
+in: " IN "
+between: "BETWEEN "
+
+exists: user.insert_between("EXISTS (", ")")
+any: user.insert_between("ANY (", ")")
+all: user.insert_between("ALL (", ")")
+
 inner join: user.insert_between("INNER JOIN ", " ON ")
 inner join using: user.insert_between("INNER JOIN ", " USING ")
 left [outer] join: user.insert_between("LEFT OUTER JOIN ", " ON ")
@@ -40,14 +59,12 @@ with:
     ") "
     key(delete up:2 right:3)
 
-column: "COLUMN "
-# column:
-#     key(return)
-#     ", "
+# Miscellaneous
 
-count: user.code_insert_function("COUNT", "")
-
+dot i d: ".id"
 date: user.insert_between("DATE '", "'")
+explain: "EXPLAIN "
+explain analyze: "EXPLAIN ANALYZE "
 
 state switch:
     "CASE "
@@ -55,22 +72,24 @@ state switch:
     "END"
     key(up)
     edit.line_end()
-
 state case: user.insert_between("WHEN ", " THEN ")
+
+# Data Definition
 
 create: "CREATE "
 alter: "ALTER "
-update: "UPDATE "
-insert into: "INSERT INTO "
-explain: "EXPLAIN "
-explain analyze: "EXPLAIN ANALYZE "
+sudo drop: "DROP "
+
 database: "DATABASE "
 table: "TABLE "
+column: "COLUMN "
 constraint: "CONSTRAINT "
 sequence: "SEQUENCE "
 index: "INDEX "
-as: " AS "
+
+add: "ADD "
 set: "SET "
+
 default: "DEFAULT "
 unique: "UNIQUE "
 not null: "NOT NULL "
@@ -78,14 +97,3 @@ on delete cascade: "ON DELETE CASCADE "
 primary key: "PRIMARY KEY "
 foreign key: "FOREIGN KEY "
 references: "REFERENCES "
-values: "VALUES "
-add: "ADD "
-on: "ON "
-between: "BETWEEN "
-exists: user.insert_between("EXISTS (", ")")
-any: user.insert_between("ANY (", ")")
-all: user.insert_between("ALL (", ")")
-
-#dangerous
-sudo drop: "DROP "
-sudo delete: "DELETE "
