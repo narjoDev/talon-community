@@ -29,6 +29,8 @@ group by: "GROUP BY "
 having: "HAVING "
 descending: " DESC"
 ascending: " ASC"
+limit: "LIMIT "
+offset: "OFFSET "
 
 as: " AS "
 values: "VALUES "
@@ -97,3 +99,7 @@ on delete cascade: "ON DELETE CASCADE "
 primary key: "PRIMARY KEY "
 foreign key: "FOREIGN KEY "
 references: "REFERENCES "
+
+# PostgreSQL
+
+meta <user.letters>: "\\{letters} "
