@@ -63,6 +63,11 @@ with:
 
 # Miscellaneous
 
+sudo send:
+    key(end)
+    ";"
+    key(enter)
+
 dot i d: ".id"
 date: user.insert_between("DATE '", "'")
 explain: "EXPLAIN "
