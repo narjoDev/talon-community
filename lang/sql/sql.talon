@@ -69,7 +69,7 @@ sudo send:
     key(enter)
 
 dot i d: ".id"
-date: user.insert_between("DATE '", "'")
+# date: user.insert_between("DATE '", "'")
 explain: "EXPLAIN "
 explain analyze: "EXPLAIN ANALYZE "
 
