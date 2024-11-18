@@ -246,6 +246,8 @@ alternate_keys = {
     "pull": "home",
     "scrape": "escape",
     "more": "space",
+    "dive": "enter",
+    "spa": "space",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
