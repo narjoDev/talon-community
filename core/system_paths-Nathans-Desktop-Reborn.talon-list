@@ -1,0 +1,17 @@
+list: user.system_paths
+hostname: Nathans-Desktop-Reborn
+-
+user: C:\Users\Nathan
+profile: C:\Users\Nathan
+desktop: C:\Users\Nathan\Desktop
+desk: C:\Users\Nathan\Desktop
+documents: C:\Users\Nathan\Documents
+docks: C:\Users\Nathan\Documents
+downloads: C:\Users\Nathan\Downloads
+music: C:\Users\Nathan\Music
+pictures: C:\Users\Nathan\Pictures
+videos: C:\Users\Nathan\Videos
+talon home: C:\Users\Nathan\AppData\Roaming\talon
+talon user: C:\Users\Nathan\AppData\Roaming\talon\user
+subsystem: \\wsl$\Ubuntu\home\nathan
+whistle user: /mnt/c/Users/Nathan
