@@ -18,3 +18,12 @@ delete: backspace
 forward delete: delete
 menu key: menu
 print screen: printscr
+
+# custom
+junk: backspace
+spunk: delete
+pull: home
+push: end
+dive: enter
+more: space
+scrape: escape
