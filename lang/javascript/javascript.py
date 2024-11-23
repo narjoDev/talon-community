@@ -15,6 +15,7 @@ ctx.lists["user.code_common_function"] = {
     "fetch": "fetch",
     "floor": "Math.floor",
     "from entries": "Object.fromEntries",
+    "is nan": "Number.isNaN",
     "keys": "Object.keys",
     "log": "console.log",
     "max": "Math.max",
@@ -22,6 +23,10 @@ ctx.lists["user.code_common_function"] = {
     "print": "console.log",
     "round": "Math.round",
     "values": "Object.values",
+    # browser
+    "prompt": "prompt",
+    # node
+    "require": "require",
 }
 
 mod.list("code_common_member_function", "Function to use in a dotted chain, eg .foo()")
@@ -60,6 +65,7 @@ ctx.lists["user.code_keyword"] = {
     "function": "function ",
     "import": "import ",
     "let": "let ",
+    "nan": "NaN",
     "new": "new ",
     "null": "null",
     "private": "private ",
@@ -81,6 +87,10 @@ class UserActions:
 
     def code_insert_is_null():
         actions.auto_insert(" === null")
+
+    def code_block():
+        actions.user.insert_between(" {", "}")
+        actions.key("enter")
 
     def code_state_if():
         actions.user.insert_between("if (", ")")

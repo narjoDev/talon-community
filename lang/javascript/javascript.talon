@@ -32,6 +32,7 @@ settings():
 (op | is) strict equal: " === "
 (op | is) strict not equal: " !== "
 op null else: " ?? "
+op type: "typeof "
 
 state const: "const "
 
@@ -47,6 +48,8 @@ state await: "await "
 
 dot {user.code_common_member_function}:
     user.insert_between(".{code_common_member_function}(", ")")
+
+dot length: ".length"
 
 state map: app.notify('ERROR: Command deprecated; please use "dot map"')
 state filter: app.notify('ERROR: Command deprecated; please use "dot filter"')
