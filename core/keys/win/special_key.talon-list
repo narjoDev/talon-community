@@ -26,4 +26,6 @@ pull: home
 push: end
 dive: enter
 more: space
-scrape: escape
+scape: escape
+spa: space
+drill: delete

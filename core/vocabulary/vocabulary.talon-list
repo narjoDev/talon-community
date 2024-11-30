@@ -29,3 +29,5 @@ ped ac: PEDAC
 datagram
 subquery
 subqueries
+substring
+substrings
