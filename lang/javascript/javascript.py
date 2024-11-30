@@ -89,7 +89,7 @@ class UserActions:
         actions.auto_insert(" === null")
 
     def code_block():
-        actions.user.insert_between(" {", "}")
+        actions.user.insert_between("{", "}")
         actions.key("enter")
 
     def code_state_if():
