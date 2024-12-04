@@ -11,6 +11,8 @@ code.language: typescriptreact
 
 ctx.lists["user.code_common_function"] = {
     "abs": "Math.abs",
+    "ceiling": "Math.ceil",
+    "seal": "Math.ceil",
     "entries": "Object.entries",
     "fetch": "fetch",
     "floor": "Math.floor",
@@ -20,7 +22,9 @@ ctx.lists["user.code_common_function"] = {
     "log": "console.log",
     "max": "Math.max",
     "min": "Math.min",
+    "parse int": "parseInt",
     "print": "console.log",
+    "random": "Math.random",
     "round": "Math.round",
     "values": "Object.values",
     # browser
