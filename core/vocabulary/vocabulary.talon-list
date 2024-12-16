@@ -32,3 +32,4 @@ subqueries
 substring
 substrings
 falsy
+nullish
