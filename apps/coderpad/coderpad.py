@@ -16,6 +16,12 @@ app: coderpad
 ctx.tags = ["user.line_commands"]
 
 
+@ctx.action_class("code")
+class CodeActions:
+    def toggle_comment():
+        actions.key("ctrl-/")
+
+
 @ctx.action_class("edit")
 class EditActions:
     def jump_line(n: int):
