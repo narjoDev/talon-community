@@ -13,7 +13,7 @@ ctx.matches = r"""
 app: coderpad
 """
 
-ctx.tags = ["user.line_commands"]
+ctx.tags = ["user.line_commands", "user.command_search"]
 
 
 @ctx.action_class("code")
@@ -34,3 +34,11 @@ class EditActions:
 
     def indent_less():
         actions.key("shift-tab")
+
+
+@ctx.action_class("user")
+class UserActions:
+    def command_search(command: str = ""):
+        actions.key("f1")
+        if command != "":
+            actions.insert(command)
