@@ -23,6 +23,7 @@ focus (move | next): key(ctrl-`)
 (slack | lack) directory: key(ctrl-shift-e)
 (slack | lack) (starred [items] | stars): key(ctrl-shift-s)
 (slack | lack) unread [messages]: key(ctrl-shift-a)
+(slack | lack) home: key(ctrl-shift-1)
 # Messaging
 grab left: key(shift-up)
 grab right: key(shift-down)
