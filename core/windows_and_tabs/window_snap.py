@@ -276,15 +276,15 @@ _snap_positions = {
     "FULL": RelativeScreenPos(0, 0, 1, 1),
     "FULLSCREEN": RelativeScreenPos(0, 0, 1, 1),
     # Custom
-    "center half": RelativeScreenPos(1 / 4, 0, 3 / 4, 1),
-    "center most": RelativeScreenPos(1 / 8, 0, 7 / 8, 1),
-    "center bigger": RelativeScreenPos(1 / 8, 1 / 16, 7 / 8, 15 / 16),
-    "left quarter": RelativeScreenPos(0, 0, 1 / 4, 1),
-    "right quarter": RelativeScreenPos(3 / 4, 0, 1, 1),
-    "left tooth": RelativeScreenPos(0, 0, 2 / 5, 1),  # 'two fifths' => 'tooth'
-    "right tooth": RelativeScreenPos(3 / 5, 0, 1, 1),
-    "left thief": RelativeScreenPos(0, 0, 3 / 5, 1),  # 'three fifths' => 'thief'
-    "right thief": RelativeScreenPos(2 / 5, 0, 1, 1),
+    "MIDDLE_HALF": RelativeScreenPos(1 / 4, 0, 3 / 4, 1),
+    "MIDDLE_THREE_QUARTERS": RelativeScreenPos(1 / 8, 0, 7 / 8, 1),
+    "CENTER_BIGGER": RelativeScreenPos(1 / 8, 1 / 16, 7 / 8, 15 / 16),
+    "LEFT_QUARTER": RelativeScreenPos(0, 0, 1 / 4, 1),
+    "RIGHT_QUARTER": RelativeScreenPos(3 / 4, 0, 1, 1),
+    "LEFT_TWO_FIFTHS": RelativeScreenPos(0, 0, 2 / 5, 1),  # 'two fifths' => 'tooth'
+    "RIGHT_TWO_FIFTHS": RelativeScreenPos(3 / 5, 0, 1, 1),
+    "LEFT_THREE_FIFTHS": RelativeScreenPos(0, 0, 3 / 5, 1),  # 'three fifths' => 'thief'
+    "RIGHT_THREE_FIFTHS": RelativeScreenPos(2 / 5, 0, 1, 1),
 }
 _split_positions = {
     "split": {

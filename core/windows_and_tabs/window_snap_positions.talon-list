@@ -42,3 +42,12 @@ bottom center small: BOTTOM_CENTER_SMALL
 center: CENTER
 full: FULL
 fullscreen: FULLSCREEN
+middle half: MIDDLE_HALF
+middle most: MIDDLE_THREE_QUARTERS
+center bigger: CENTER_BIGGER
+left quarter: LEFT_QUARTER
+right quarter: RIGHT_QUARTER
+left tooth: LEFT_TWO_FIFTHS
+right tooth: RIGHT_TWO_FIFTHS
+left thief: LEFT_THREE_FIFTHS
+right thief: RIGHT_THREE_FIFTHS
