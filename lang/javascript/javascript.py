@@ -10,23 +10,27 @@ code.language: typescriptreact
 """
 
 ctx.lists["user.code_common_function"] = {
+    "fetch": "fetch",
+    "log": "console.log",
+    "print": "console.log",
+    # math
     "abs": "Math.abs",
     "ceiling": "Math.ceil",
     "seal": "Math.ceil",
-    "entries": "Object.entries",
-    "fetch": "fetch",
     "floor": "Math.floor",
-    "from entries": "Object.fromEntries",
-    "is nan": "Number.isNaN",
-    "keys": "Object.keys",
-    "log": "console.log",
     "max": "Math.max",
     "min": "Math.min",
-    "parse int": "parseInt",
-    "print": "console.log",
     "random": "Math.random",
     "round": "Math.round",
+    # numbers
+    "is nan": "Number.isNaN",
+    "parse int": "parseInt",
+    # objects
+    "entries": "Object.entries",
+    "from entries": "Object.fromEntries",
+    "keys": "Object.keys",
     "values": "Object.values",
+    # VENDOR SPECIFIC
     # browser
     "prompt": "prompt",
     # node
