@@ -58,6 +58,12 @@ ctx.lists["user.code_common_member_function"] = {
     "split": "split",
     "substring": "substring",
     "then": "then",
+    # maps and sets
+    "add": "add",
+    "delete": "delete",
+    "get": "get",
+    "has": "has",
+    "set": "set",
 }
 
 ctx.lists["user.code_keyword"] = {
