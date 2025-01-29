@@ -64,6 +64,9 @@ ctx.lists["user.code_common_member_function"] = {
     "get": "get",
     "has": "has",
     "set": "set",
+    # regular expressions and strings
+    "match": "match",
+    "test": "test",
 }
 
 ctx.lists["user.code_keyword"] = {
