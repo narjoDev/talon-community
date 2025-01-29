@@ -51,6 +51,9 @@ dot {user.code_common_member_function}:
 
 dot length: ".length"
 
+state new <user.text>$:
+    user.insert_between("new {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')}(", ")")
+
 state map: app.notify('ERROR: Command deprecated; please use "dot map"')
 state filter: app.notify('ERROR: Command deprecated; please use "dot filter"')
 state reduce: app.notify('ERROR: Command deprecated; please use "dot reduce"')
