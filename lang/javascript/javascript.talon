@@ -51,6 +51,8 @@ dot {user.code_common_member_function}:
 
 dot length: ".length"
 
+this dot: "this."
+
 state new <user.text>$:
     user.insert_between("new {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')}(", ")")
 
