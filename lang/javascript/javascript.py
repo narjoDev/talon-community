@@ -13,7 +13,10 @@ ctx.lists["user.code_common_function"] = {
     "fetch": "fetch",
     "log": "console.log",
     "print": "console.log",
-    # math
+    # classes
+    "struck": "constructor",
+    "super": "super",
+    # Math
     "abs": "Math.abs",
     "ceiling": "Math.ceil",
     "seal": "Math.ceil",
@@ -25,7 +28,7 @@ ctx.lists["user.code_common_function"] = {
     # numbers
     "is nan": "Number.isNaN",
     "parse int": "parseInt",
-    # objects
+    # Object
     "entries": "Object.entries",
     "from entries": "Object.fromEntries",
     "keys": "Object.keys",

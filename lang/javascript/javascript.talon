@@ -56,6 +56,16 @@ this dot: "this."
 state new <user.text>$:
     user.insert_between("new {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')}(", ")")
 
+class <user.text>$:
+    user.insert_between("class {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')} {", "}")
+    key(enter)
+    key(up)
+    edit.line_end()
+    edit.left()
+
+extends <user.text>$:
+    auto_insert("extends {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')} ")
+
 state map: app.notify('ERROR: Command deprecated; please use "dot map"')
 state filter: app.notify('ERROR: Command deprecated; please use "dot filter"')
 state reduce: app.notify('ERROR: Command deprecated; please use "dot reduce"')
