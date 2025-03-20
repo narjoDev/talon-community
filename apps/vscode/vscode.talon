@@ -204,6 +204,13 @@ pull request: user.vscode("pr.create")
 change next: key(alt-f5)
 change last: key(shift-alt-f5)
 
+accept incoming: user.vscode("merge-conflict.accept.incoming")
+accept both: user.vscode("merge-conflict.accept.both")
+accept current: user.vscode("merge-conflict.accept.current")
+accept all current: user.vscode("merge-conflict.accept.all-current")
+accept all incoming: user.vscode("merge-conflict.accept.all-incoming")
+conflict next: user.vscode("merge-conflict.next")
+
 # Testing
 test run: user.vscode("testing.runAtCursor")
 test run file: user.vscode("testing.runCurrentFile")
