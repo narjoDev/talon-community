@@ -1,0 +1,15 @@
+Path,Spoken
+C:\Users\Nathan,user
+C:\Users\Nathan,profile
+C:\Users\Nathan\Desktop,desktop
+C:\Users\Nathan\Desktop,desk
+C:\Users\Nathan\Documents,documents
+C:\Users\Nathan\Documents,docks
+C:\Users\Nathan\Downloads,downloads
+C:\Users\Nathan\Music,music
+C:\Users\Nathan\Pictures,pictures
+C:\Users\Nathan\Videos,videos
+C:\Users\Nathan\AppData\Roaming\talon,talon home
+C:\Users\Nathan\AppData\Roaming\talon\user,talon user
+\\wsl$\Ubuntu\home\nathan,subsystem
+/mnt/c/Users/Nathan,whistle user
