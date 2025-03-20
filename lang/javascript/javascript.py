@@ -31,6 +31,8 @@ ctx.lists["user.code_common_function"] = {
     # Object
     "entries": "Object.entries",
     "from entries": "Object.fromEntries",
+    "get proto": "Object.getPrototypeOf",
+    "has own": "Object.hasOwn",
     "keys": "Object.keys",
     "values": "Object.values",
     # VENDOR SPECIFIC
@@ -58,6 +60,7 @@ ctx.lists["user.code_common_member_function"] = {
     "reduce": "reduce",
     "slice": "slice",
     "some": "some",
+    "splice": "splice",
     "split": "split",
     "substring": "substring",
     "then": "then",
