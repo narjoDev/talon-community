@@ -40,6 +40,12 @@ ctx.lists["user.code_common_function"] = {
     # VENDOR SPECIFIC
     # browser
     "prompt": "prompt",
+    # DOM
+    "doc get id": "document.getElementById",
+    "doc get class": "document.getElementsByClassName",
+    "doc get tag": "document.getElementsByTagName",
+    "doc query": "document.querySelector",
+    "doc query all": "document.querySelectorAll",
     # node
     "require": "require",
 }
