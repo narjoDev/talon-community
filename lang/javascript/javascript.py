@@ -81,6 +81,8 @@ ctx.lists["user.code_common_member_function"] = {
     # regular expressions and strings
     "match": "match",
     "test": "test",
+    # DOM
+    "listen": "addEventListener",
 }
 
 ctx.lists["user.code_keyword"] = {
