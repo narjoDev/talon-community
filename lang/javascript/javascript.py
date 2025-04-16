@@ -41,6 +41,7 @@ ctx.lists["user.code_common_function"] = {
     # browser
     "prompt": "prompt",
     # DOM
+    "doc crate": "document.createElement",
     "doc get id": "document.getElementById",
     "doc get class": "document.getElementsByClassName",
     "doc get tag": "document.getElementsByTagName",
