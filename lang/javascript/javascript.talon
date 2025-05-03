@@ -55,6 +55,9 @@ state await: "await "
 dot {user.code_common_member_function}:
     user.insert_between(".{code_common_member_function}(", ")")
 
+proto <user.text> dot {user.code_common_member_function}:
+    user.insert_between("{user.formatted_text(text, 'PUBLIC_CAMEL_CASE')}.prototype.{code_common_member_function}.call(", ")")
+
 dot length: ".length"
 
 this dot: "this."
@@ -62,7 +65,7 @@ this dot: "this."
 state new <user.text>$:
     user.insert_between("new {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')}(", ")")
 
-class <user.text>$:
+[state] class <user.text>$:
     user.insert_between("class {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')} {", "}")
     key(enter)
     key(up)
