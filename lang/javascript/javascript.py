@@ -13,7 +13,7 @@ code.language: typescriptreact
 
 ctx.lists["user.code_common_function"] = {
     "fetch": "fetch",
-    "interval": "setInterval,"
+    "interval": "setInterval",
     "log": "console.log",
     "print": "console.log",
     "timeout": "setTimeout",
