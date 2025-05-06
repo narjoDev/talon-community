@@ -52,6 +52,12 @@ state async: "async "
 
 state await: "await "
 
+state try: "try "
+state catch: user.insert_between("catch (", ")")
+state finally:
+    "finally "
+    user.code_block()
+
 dot {user.code_common_member_function}:
     user.insert_between(".{code_common_member_function}(", ")")
 
