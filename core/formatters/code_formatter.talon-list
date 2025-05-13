@@ -2,6 +2,7 @@ list: user.code_formatter
 -
 shout: ALL_CAPS
 all down: ALL_LOWERCASE
+subtle: ALL_LOWERCASE
 camel: PRIVATE_CAMEL_CASE
 dotted: DOT_SEPARATED
 list: COMMA_SEPARATED
