@@ -19,4 +19,6 @@ ctx.lists["user.markdown_code_block_language"] = {
     "text": "text",
     "sequel": "sql",
     "javascript": "javascript",
+    "HTML": "html",
+    "CSS": "css",
 }
