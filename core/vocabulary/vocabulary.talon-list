@@ -14,11 +14,11 @@ proc
 Wook
 minitest
 autorun
-OSI
-UDP
-URI
-URL
-TLS
+O S I: OSI
+U D P: UDP
+U R I: URI
+U R L: URL
+T L S: TLS
 asky: ASCII
 demultiplexing
 IPV four: IPv4
