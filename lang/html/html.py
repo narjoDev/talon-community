@@ -38,7 +38,7 @@ tag_names_list = {
     "option",
     "form",
     "label",
-    "Link",
+    "link",
     "hr",
     "em",
     "strong",
