@@ -157,6 +157,7 @@ operators = Operators(
     MATH_LESS_THAN_OR_EQUAL=" <= ",
     MATH_WEAK_EQUAL=" == ",
     MATH_WEAK_NOT_EQUAL=" != ",
+    MATH_IN=" in ",
 )
 
 
