@@ -80,8 +80,7 @@ state new <user.text>$:
     edit.line_end()
     edit.left()
 
-extends <user.text>$:
-    auto_insert("extends {user.formatted_text(text, 'PUBLIC_CAMEL_CASE')} ")
+extends: " extends "
 
 state map: app.notify('ERROR: Command deprecated; please use "dot map"')
 state filter: app.notify('ERROR: Command deprecated; please use "dot filter"')
