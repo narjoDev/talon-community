@@ -8,3 +8,4 @@ type intersect [<user.code_type>]: " & {code_type or ''}"
 state type: user.insert_between("type ", " = ")
 
 as const: " as const"
+assert <user.code_type>: " as {code_type}"
