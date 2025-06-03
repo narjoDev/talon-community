@@ -39,6 +39,7 @@ settings():
 
 op null else: " ?? "
 op type: "typeof "
+is instance: " instanceof "
 
 state const: "const "
 
