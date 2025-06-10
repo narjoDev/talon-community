@@ -9,3 +9,5 @@ state type: user.insert_between("type ", " = ")
 
 as const: " as const"
 assert <user.code_type>: " as {code_type}"
+
+key of | kiev: "keyof "
