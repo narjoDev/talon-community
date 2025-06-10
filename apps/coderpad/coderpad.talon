@@ -1,5 +1,9 @@
 app: coderpad
 -
+settings():
+    # Necessary if intellisense is on
+    key_wait = 9.0
+
 trim trail:
     key(ctrl-k)
     key(ctrl-x)
