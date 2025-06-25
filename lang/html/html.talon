@@ -14,7 +14,9 @@ pair elm {user.code_tag}:
   text = edit.selected_text()
   key(delete)
   user.insert_between("<{code_tag}", ">{text}</{code_tag}>")
-sows elm {user.code_tag}: "<{code_tag} />"
+sows elm {user.code_tag}:
+  user.insert_between("<{code_tag}", " />")
 
+# FIXME: templating language specific:
 template show: user.insert_between("<%= ", " %>")
 template dew: user.insert_between("<% ", " %>")

@@ -48,6 +48,7 @@ tag_names_list = {
     "code",
     "pre",
     "figure",
+    "legend",
 }
 
 # fmt: off
@@ -82,6 +83,7 @@ tag_names = {
     # "i":                "i",
     "sit":              "i",
     "fig caption":      "figcaption",
+    "empty": "",
 }
 # fmt: on
 
