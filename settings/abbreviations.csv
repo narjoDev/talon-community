@@ -440,3 +440,5 @@ TTRPG,tabletop
 href,H ref
 psql,postgresql
 DOM,dom
+cors,cores
+arr,array
