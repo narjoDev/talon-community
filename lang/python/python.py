@@ -14,11 +14,14 @@ ctx.lists["user.code_common_function"] = {
     "integer": "int",
     "length": "len",
     "list": "list",
+    "max": "max",
+    "min": "min",
     "print": "print",
     "range": "range",
     "set": "set",
     "split": "split",
     "string": "str",
+    "sum": "sum",
     "update": "update",
 }
 
