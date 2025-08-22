@@ -15,21 +15,6 @@ ctx.lists["user.code_parameter_name"] = {
     "V C E robust": "vce(robust)",
 }
 
-# functions_common.py
-ctx.lists["user.code_common_function"] = {
-    # base stata
-    "global": "global",
-    "local": "local",
-    "reg": "reg",
-    "regress": "reg",
-    # packages
-    "estadd": "estadd",
-    "estout": "estout",
-    "estpost": "estpost",
-    "eststo": "eststo",
-    "esttab": "esttab",
-}
-
 # libraries.py
 ctx.lists["user.code_libraries"] = {
     "estout": "estout",
@@ -63,10 +48,6 @@ class UserActions:
     def code_get_operators() -> Operators:
         return operators
 
-    # comment_line.py
-    def code_comment_line_prefix():
-        actions.auto_insert("* ")
-
     # functions.py
     def code_private_function(text: str):
         result = "program {} \n\nend".format(
@@ -86,58 +67,12 @@ class UserActions:
 
     # functions_common.py
     def code_insert_function(text: str, selection: str):
-        text += f" {selection or ''}"
-        actions.user.paste(text)
-
-    # imperative.py
-    def code_block():
-        actions.auto_insert("\n")
-
-    def code_state_if():
-        actions.insert("if  {\n\n}")
-        actions.key("up tab up")
-        actions.edit.line_end()
-        actions.key("left:2")
-
-    def code_state_else_if():
-        actions.insert("else if  {\n\n}")
-        actions.key("up tab up")
-        actions.edit.line_end()
-        actions.key("left:2")
-
-    def code_state_else():
-        actions.insert("else {\n\n}")
-        actions.key("up tab")
-
-    def code_state_for():
-        actions.insert("forval  {\n\n}")
-        actions.key("up tab up")
-        actions.edit.line_end()
-        actions.key("left:2")
-
-    def code_state_for_each():
-        actions.insert("foreach  in  {\n\n}")
-        actions.key("up tab up")
-        actions.edit.line_end()
-        actions.key("left:2")
-
-    def code_state_while():
-        actions.insert("while  {\n\n}")
-        actions.key("up tab up")
-        actions.edit.line_end()
-        actions.key("left:2")
-
-    def code_break():
-        actions.insert("break")
-
-    def code_next():
-        actions.insert("continue")
-
-    # libraries.py
-    def code_import():
-        actions.auto_insert("ssc install ")
+        substitutions = {"1": text}
+        if selection:
+            substitutions["0"] = selection
+        actions.user.insert_snippet_by_name("functionCall", substitutions)
 
     # libraries.py
     def code_insert_library(text: str, selection: str):
-        actions.auto_insert("ssc install ")
-        actions.user.paste(text + selection)
+        library_text = text + selection
+        actions.user.insert_snippet_by_name("importStatement", {"0": library_text})
