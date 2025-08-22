@@ -21,4 +21,6 @@ ctx.lists["user.markdown_code_block_language"] = {
     "javascript": "javascript",
     "HTML": "html",
     "CSS": "css",
+    "are": "r",
+    "markdown": "markdown",
 }

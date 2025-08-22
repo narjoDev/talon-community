@@ -11,48 +11,6 @@ code.language: javascriptreact
 code.language: typescriptreact
 """
 
-ctx.lists["user.code_common_function"] = {
-    "fetch": "fetch",
-    "interval": "setInterval",
-    "log": "console.log",
-    "print": "console.log",
-    "timeout": "setTimeout",
-    # classes
-    "struck": "constructor",
-    "super": "super",
-    # Math
-    "abs": "Math.abs",
-    "ceiling": "Math.ceil",
-    "seal": "Math.ceil",
-    "floor": "Math.floor",
-    "max": "Math.max",
-    "min": "Math.min",
-    "random": "Math.random",
-    "round": "Math.round",
-    # numbers
-    "is nan": "Number.isNaN",
-    "parse int": "parseInt",
-    # Object
-    "entries": "Object.entries",
-    "from entries": "Object.fromEntries",
-    "get proto": "Object.getPrototypeOf",
-    "has own": "Object.hasOwn",
-    "keys": "Object.keys",
-    "values": "Object.values",
-    # VENDOR SPECIFIC
-    # browser
-    "prompt": "prompt",
-    # DOM
-    "doc crate": "document.createElement",
-    "doc get id": "document.getElementById",
-    "doc get class": "document.getElementsByClassName",
-    "doc get tag": "document.getElementsByTagName",
-    "doc query": "document.querySelector",
-    "doc query all": "document.querySelectorAll",
-    # node
-    "require": "require",
-}
-
 mod.list("code_common_member_function", "Function to use in a dotted chain, eg .foo()")
 
 ctx.lists["user.code_common_member_function"] = {
@@ -192,42 +150,6 @@ class UserActions:
     def code_operator_object_accessor():
         actions.auto_insert(".")
 
-    def code_state_while():
-        actions.user.insert_between("while (", ")")
-
-    def code_state_do():
-        actions.auto_insert("do ")
-
-    def code_state_return():
-        actions.insert("return ")
-
-    def code_state_for():
-        actions.user.insert_between("for (", ")")
-
-    def code_state_switch():
-        actions.user.insert_between("switch (", ")")
-
-    def code_state_case():
-        actions.user.insert_between("case ", ":")
-
-    def code_state_go_to():
-        actions.auto_insert("")
-
-    def code_import():
-        actions.auto_insert("import ")
-
-    def code_define_class():
-        actions.auto_insert("class ")
-
-    def code_state_for_each():
-        actions.user.insert_between(".forEach(", ")")
-
-    def code_break():
-        actions.auto_insert("break;")
-
-    def code_next():
-        actions.auto_insert("continue;")
-
     def code_insert_true():
         actions.auto_insert("true")
 
@@ -236,9 +158,6 @@ class UserActions:
 
     def code_insert_null():
         actions.auto_insert("null")
-
-    def code_comment_line_prefix():
-        actions.auto_insert("//")
 
     def code_insert_function(text: str, selection: str):
         text += f"({selection or ''})"

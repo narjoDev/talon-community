@@ -50,16 +50,7 @@ right [outer] join: user.insert_between("RIGHT OUTER JOIN ", " ON ")
 full [outer] join: user.insert_between("FULL OUTER JOIN ", " ON ")
 cross join: "CROSS JOIN "
 
-with:
-    key(enter up)
-    "WITH  AS ("
-    key(enter tab)
-    "SELECT "
-    key(enter shift-tab)
-    edit.extend_line_end()
-    edit.delete()
-    ") "
-    key(delete up:2 right:3)
+with: user.insert_snippet_by_name("withStatement")
 
 # Miscellaneous
 
