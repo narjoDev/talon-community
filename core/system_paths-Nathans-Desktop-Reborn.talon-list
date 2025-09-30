@@ -15,3 +15,4 @@ talon home: C:\Users\Nathan\AppData\Roaming\talon
 talon user: C:\Users\Nathan\AppData\Roaming\talon\user
 subsystem: \\wsl$\Ubuntu\home\nathan
 whistle user: /mnt/c/Users/Nathan
+whistle capstone: /home/nathan/dev-launch/capstone
