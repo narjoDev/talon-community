@@ -120,49 +120,11 @@ class UserActions:
     def code_insert_null():
         actions.auto_insert("null")
 
-    # def code_insert_is_null():
-    #     actions.auto_insert(" is None")
-
-    # def code_insert_is_not_null():
-    #     actions.auto_insert(" is not None")
-
-    def code_state_if():
-        actions.user.insert_between("if ", ":")
-
-    def code_state_else_if():
-        actions.user.insert_between("elif ", ":")
-
-    def code_state_else():
-        actions.insert("else:")
-        actions.key("enter")
-
-    def code_state_switch():
-        actions.user.insert_between("match ", ":")
-
-    def code_state_case():
-        actions.insert(":")
-        actions.edit.left()
-
-    def code_state_for():
-        actions.auto_insert("for ")
-
-    def code_state_for_each():
-        actions.user.insert_between("for ", " in ")
-
-    def code_state_while():
-        actions.user.insert_between("while ", ":")
-
     def code_define_class():
         actions.auto_insert("class ")
 
-    # def code_import():
-    #     actions.auto_insert("import ")
-
     def code_comment_line_prefix():
         actions.auto_insert("# ")
-
-    def code_state_return():
-        actions.insert("return ")
 
     def code_insert_true():
         actions.auto_insert("true")
