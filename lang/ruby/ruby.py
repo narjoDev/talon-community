@@ -3,6 +3,7 @@ from talon import Context, actions, settings, Module
 mod = Module()
 mod.tag("code_ruby", desc="tag for enabling ruby functions")
 
+from ...core.described_functions import create_described_insert_between
 from ..tags.operators import Operators
 
 ctx = Context()
@@ -19,7 +20,7 @@ ctx.lists["user.code_common_function"] = {
 }
 operators = Operators(
     # code_operators_array
-    SUBSCRIPT=lambda: actions.user.insert_between("[", "]"),
+    SUBSCRIPT=create_described_insert_between("[", "]"),
     # code_operators_assignment
     ASSIGNMENT=" = ",
     ASSIGNMENT_OR=" ||= ",

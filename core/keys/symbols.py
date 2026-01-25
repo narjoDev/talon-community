@@ -51,13 +51,14 @@ class Symbol:
 currency_symbols = [
     Symbol("$", ["dollar sign"], ["dollar"]),
     Symbol("£", ["pound sign"], ["pound"]),
+    Symbol("€", ["euro sign"], ["euro"]),
 ]
 
 symbols = [
     Symbol("`", ["back tick"], ["grave"]),
     Symbol(",", ["comma", "coma"]),
     Symbol(".", ["period", "full stop"], ["dot", "point"]),
-    Symbol(";", ["semicolon", "semi"]),
+    Symbol(";", ["semicolon"], ["semi"]),
     Symbol(":", ["colon"]),
     Symbol("?", ["question mark"], ["question"]),
     Symbol("!", ["exclamation mark", "exclamation point"], ["bang"]),
@@ -65,8 +66,11 @@ symbols = [
     Symbol("#", ["hash sign", "number sign"], ["hash"]),
     Symbol("%", ["percent sign"], ["percent"]),
     Symbol("@", ["at symbol", "at sign"]),
+    Symbol("°", ["degree sign"], ["degree", "degrees"]),
     Symbol("&", ["ampersand", "and sign"], ["amper"]),
     Symbol("-", ["hyphen"], ["minus", "dash"]),
+    Symbol("–", ["en dash", "nut dash"]),
+    Symbol("—", ["em dash", "mutton dash"]),
     Symbol("=", None, ["equals"]),
     Symbol("+", None, ["plus"]),
     Symbol("~", None, ["tilde"]),
