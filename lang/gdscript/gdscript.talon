@@ -43,3 +43,5 @@ sign const [<user.text>]:
     insert("const ")
     user.code_public_variable_formatter(text)
     user.code_operator_assignment()
+
+op (infer | walrus): insert(" := ")

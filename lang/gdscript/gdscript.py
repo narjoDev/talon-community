@@ -5,6 +5,17 @@ ctx.matches = r"""
 code.language: gdscript
 """
 
+ctx.lists["user.code_type"] = {
+    "void": "void",
+    "null": "null",
+    "boolean": "bool",
+    "integer": "int",
+    "int": "int",
+    "float": "float",
+    "string": "String",
+    "array": "Array",
+}
+
 
 # WARNING: Commented blocks may still be python implementation
 @ctx.action_class("user")
