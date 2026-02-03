@@ -26,6 +26,13 @@ bar source: user.vscode("workbench.view.scm")
 bar test: user.vscode("workbench.view.testing.focus")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
 
+# Chat (AI)
+
+chat switch: user.vscode("workbench.panel.chat")
+chat context [<user.text>]:
+    user.vscode("workbench.action.chat.attachContext")
+    insert(user.text or "")
+
 # Symbol search
 symbol hunt [<user.text>]:
     user.vscode("workbench.action.gotoSymbol")
