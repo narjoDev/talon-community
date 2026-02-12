@@ -14,6 +14,7 @@ ctx.lists["user.code_type"] = {
     "float": "float",
     "string": "String",
     "array": "Array",
+    "vector": "Vector",
 }
 
 
@@ -91,6 +92,9 @@ class UserActions:
 
     def code_operator_not_in():
         actions.auto_insert(" not in ")
+
+    def code_operator_not():
+        actions.auto_insert(" not ")
 
     def code_operator_bitwise_and():
         actions.auto_insert(" & ")

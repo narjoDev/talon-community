@@ -1,0 +1,6 @@
+list: user.code_common_function
+code.language: gdscript
+-
+
+print: print
+log: print
