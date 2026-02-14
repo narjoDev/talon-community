@@ -1,0 +1,15 @@
+app: code_signal
+-
+
+tag(): terminal
+tag(): user.generic_unix_shell
+
+# this was necessary for coderpad
+# settings():
+#     key_wait = 9.0
+
+cursor up: key("ctrl-alt-up")
+cursor down: key("ctrl-alt-down")
+cursor more: key("ctrl-d")
+
+format document: key("shift-alt-f")
