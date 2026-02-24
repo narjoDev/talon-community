@@ -44,3 +44,6 @@ A P I: API
 zod
 graph Q L: GraphQL
 ace sprite: Aseprite
+L L M: LLM
+G P T: GPT
+chat G P T: ChatGPT
