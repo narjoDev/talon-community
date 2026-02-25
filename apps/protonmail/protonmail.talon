@@ -1,5 +1,5 @@
 tag: browser
-win.title: /ProtonMail/
+win.title: /Proton ?Mail/
 -
 # General
 ## Application
