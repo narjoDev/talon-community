@@ -1,13 +1,9 @@
 app: godot
 -
 settings():
-  key_wait = 3.0
+  key_wait = 8.0
 
 # text editing
-cursor up: key("ctrl-shift-up")
-cursor down: key("ctrl-shift-down")
-cursor more: key("ctrl-d")
-cursor skip: key("ctrl-alt-d")
 convert [to] spaces: key("ctrl-shift-y")
 convert [to] tabs: key("ctrl-shift-i")
 
@@ -18,7 +14,17 @@ show script: key("ctrl-f3")
 show game: key("ctrl-f4")
 show assets: key("ctrl-f5")
 zen switch: key("ctrl-shift-f11")
-[script] tray switch: key("ctrl-\\")
+tray switch:
+  # switch away
+  key("ctrl-f1")
+  # and back to script editor for focus
+  key("ctrl-f3")
+  # toggle files panel
+  key("ctrl-\\")
+
+# run game
+run project: key("f5")
+run current: key("f6")
 
 # scene navigation
 scene new:
@@ -61,9 +67,10 @@ look groups:
   key("enter")
 
 # bottom panel
+panel switch: key("ctrl-j")
+panel max: key("shift-f12")
 panel output: key("alt-o")
 panel (debug) | debugger: key("alt-d")
 panel audio: key("alt-a")
 panel animation: key("alt-n")
 panel shader: key("alt-s")
-panel max: key("shift-f12")

@@ -13,7 +13,7 @@ ctx.matches = r"""
 app: godot
 """
 
-ctx.tags = ["user.line_commands", "user.command_search"]
+ctx.tags = ["user.command_search", "user.line_commands", "user.multiple_cursors"]
 
 
 @ctx.action_class("code")
@@ -43,3 +43,18 @@ class UserActions:
         actions.key("ctrl-shift-p")
         if command != "":
             actions.insert(command)
+
+    def multi_cursor_add_above():
+        actions.key("ctrl-shift-up")
+
+    def multi_cursor_add_below():
+        actions.key("ctrl-shift-down")
+
+    def multi_cursor_disable():
+        actions.key("escape")
+
+    def multi_cursor_select_more_occurrences():
+        actions.key("ctrl-d")
+
+    def multi_cursor_skip_occurrence():
+        actions.key("ctrl-alt-d")
